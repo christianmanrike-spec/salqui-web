@@ -1,0 +1,45 @@
+/* Salqui — Typography tokens
+   Swiss geometric grotesque. Clean, technical, generous air.
+   Display/UI: Archivo (neo-grotesque, precise, variable weight range).
+   Technical annotations / specs / index numbers: IBM Plex Mono.
+   NOTE: font files are loaded via Google Fonts (see fonts.css).
+   These are the nearest high-quality matches to the brief's references
+   (Helvetica Now / Neue Haas Grotesk / Circular). Flag to client if
+   licensed originals are required. */
+:root {
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", ui-monospace, monospace;
+
+  /* ---- Weights ---- */
+  --w-regular: 400; /* @kind font */
+  --w-medium: 500; /* @kind font */
+  --w-semibold: 600; /* @kind font */
+  --w-bold: 700; /* @kind font */
+  --w-black: 800; /* @kind font */
+
+  /* ---- Type scale (1.250 major-third, 16px base) ---- */
+  --text-xs: 0.75rem;    /* 12 */
+  --text-sm: 0.875rem;   /* 14 */
+  --text-base: 1rem;     /* 16 */
+  --text-md: 1.125rem;   /* 18 */
+  --text-lg: 1.375rem;   /* 22 */
+  --text-xl: 1.75rem;    /* 28 */
+  --text-2xl: 2.25rem;   /* 36 */
+  --text-3xl: 3rem;      /* 48 */
+  --text-4xl: 4rem;      /* 64 */
+  --text-5xl: 5.5rem;    /* 88 */
+
+  /* ---- Line heights ---- */
+  --leading-tight: 1.02;
+  --leading-snug: 1.15;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  /* ---- Letter-spacing (tracking is a premium signal for Salqui) ---- */
+  --tracking-tighter: -0.03em;  /* big display headings */
+  --tracking-tight: -0.015em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.08em;      /* labels */
+  --tracking-wider: 0.18em;     /* eyebrows, taglines: "PRECISIÓN QUE SE VE" */
+}
